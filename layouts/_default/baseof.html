@@ -16,7 +16,7 @@
 {{ .Scratch.SetInMap "params" "color_scheme" (.Site.Params.color_scheme | default "light") }}
 
 <!DOCTYPE html>
-<html lang='{{ .Site.LanguageCode }}'>
+<html lang='{{ .Site.Language.Locale }}'>
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}

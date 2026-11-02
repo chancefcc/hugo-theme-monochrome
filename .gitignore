@@ -155,6 +155,9 @@ Temporary Items
 
 # Ignore files generated from Hugo build
 /assets/jsconfig.json
+resources/_gen/
+exampleSite/resources/
+/exampleSite/public/
 .hugo_build.lock
 
 .vscode

@@ -68,12 +68,12 @@
                             <svg width="18px" height="18px" viewBox="0 0 24 24">
                                 {{- partial "svg/feather.html" "globe" -}}
                             </svg>
-                            <span class="dropdown-desc">{{ .Site.Language.LanguageName }}</span>
+                            <span class="dropdown-desc">{{ .Site.Language.Label }}</span>
                         </div>
                         <ul class="pure-menu-children">
                             {{ range .Site.Home.AllTranslations }}
                             <li class="pure-menu-item">
-                                <a href="{{ .Permalink }}" class="pure-menu-link">{{ .Language.LanguageName }}</a>
+                                <a href="{{ .Permalink }}" class="pure-menu-link">{{ .Language.Label }}</a>
                             </li>
                             {{ end }}
                         </ul>
